@@ -17,7 +17,7 @@ Adding the TTI polyfill is a two-step process. First you need to add a snippet o
 
 ```html
 <script>
-!function(){if('PerformanceLongTaskTiming' in window){var g=window.__tti={e:[]};
+!function(){if('PerformanceLongTaskTiming' in window){var ttiPropName='__tti';var g=window[ttiPropName]={e:[]};
 g.o=new PerformanceObserver(function(l){g.e=g.e.concat(l.getEntries())});
 g.o.observe({entryTypes:['longtask']})}}();
 </script>
@@ -52,6 +52,13 @@ The following table outlines the configuration options you can pass to the `getF
     <td><code>number|null</code></td>
     <td>
       The lower bound to start forward-searching for the quite window. If no value is set, the default is after the <code>DOMContentLoaded</code> event.
+    </td>
+  </tr>
+    <tr valign="top">
+    <td><code>ttiPropName</code></td>
+    <td><code>string|undefined</code></td>
+    <td>
+      The name of the <code>window</code> object property where to find performance entries.
     </td>
   </tr>
   <tr valign="top">

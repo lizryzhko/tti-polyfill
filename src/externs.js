@@ -37,6 +37,8 @@ window.__tti.e;
 /**
  * @typedef {{
  *   useMutationObserver: (boolean|undefined),
+ *   minValue: (number|null|undefined),
+ *   ttiPropName: (string|undefined)
  * }}
  */
 var FirstConsistentlyInteractiveDetectorInit;

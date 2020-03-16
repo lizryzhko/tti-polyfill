@@ -35,11 +35,13 @@ export default class FirstConsistentlyInteractiveDetector {
     // If minValue is null, by default it is DOMContentLoadedEnd.
     this._minValue = config.minValue || null;
 
+    const ttiPropName = config.ttiPropName || '__tti';
+
     /** @type {Array<PerformanceEntry>|undefined} */
-    const snippetEntries = window.__tti && window.__tti.e;
+    const snippetEntries = window[ttiPropName] && window[ttiPropName].e;
 
     /** @type {PerformanceObserver|undefined} */
-    const snippetObserver = window.__tti && window.__tti.o;
+    const snippetObserver = window[ttiPropName] && window[ttiPropName].o;
 
     // If we recorded some long tasks before this class was initialized,
     // consume them now.

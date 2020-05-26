@@ -1,7 +1,8 @@
 Time to Interactive Polyfill
 ============================
 
-This is a fork of https://github.com/GoogleChromeLabs/tti-polyfill
+This is a fork of https://github.com/GoogleChromeLabs/tti-polyfill.
+
 A polyfill for the Time to Interactive metric. See the [metric definition](https://goo.gl/OSmrPk) for in-depth implementation details.
 
 ## Installation

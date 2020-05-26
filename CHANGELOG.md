@@ -1,5 +1,10 @@
 # Changelog
 
+### 0.3.0 (2020-05-27)
+
+- Fix request counter for failed requests [#8]
+- Add ttiPropName [#8]
+
 ### 0.2.2 (2017-06-20)
 
 - Fix incorrectly mangled symbols [#7]

@@ -50,8 +50,7 @@ const compileRollupBundle = (outputFilePath, defines, rollupBundle) => {
       path: path.basename(outputFilePath),
     }],
     defines: defines,
-    compilationLevel: 'SIMPLE_OPTIMIZATIONS',
-    // compilationLevel: 'ADVANCED',
+    compilationLevel: 'ADVANCED',
     useTypesForOptimization: true,
     outputWrapper:
         '(function(){%output%})();\n' +

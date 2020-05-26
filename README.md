@@ -10,7 +10,7 @@ A polyfill for the Time to Interactive metric. See the [metric definition](https
 You can install the TTI polyfill from npm by running:
 
 ```sh
-npm install tti-polyfill
+npm install overlooker-tti-polyfill
 ```
 
 ## Usage

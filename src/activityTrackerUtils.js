@@ -44,12 +44,12 @@ export function patchXMLHTTPRequest(beforeXHRSendCb, onRequestCompletedCb) {
  * @param {!Function} afterRequestCb
  */
 export function patchFetch(beforeRequestCb, afterRequestCb) {
-  const originalFetch = fetch;
+  const originalFetch = window.fetch;
 
   // TODO(philipwalton): assign this to a property of the global variable
   // explicitely rather than implicitely.
   // eslint-disable-next-line no-global-assign
-  fetch = (...args) => {
+  window.fetch = (...args) => {
     return new Promise((resolve, reject) => {
       const requestId = uniqueId++;
       beforeRequestCb(requestId);
@@ -59,7 +59,7 @@ export function patchFetch(beforeRequestCb, afterRequestCb) {
             resolve(value);
           },
           (err) => {
-            afterRequestCb(err);
+            afterRequestCb(requestId);
             reject(err);
           });
     });

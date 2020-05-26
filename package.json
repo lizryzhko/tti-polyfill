@@ -1,5 +1,5 @@
 {
-  "name": "@overlooker/tti-polyfill",
+  "name": "overlooker-tti-polyfill",
   "version": "0.3.0",
   "description": "Polyfill for Time to Interactive. See https://goo.gl/OSmrPk",
   "main": "tti-polyfill.js",

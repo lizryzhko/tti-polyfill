@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/overlookerjs/tti-polyfill.git"
+    "url": "git+https://github.com/overlookerjs/overlooker-tti-polyfill.git"
   },
   "contributors": [
     "Deepanjan Roy (Google)",
@@ -17,9 +17,9 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/overlookerjs/tti-polyfill.git"
+    "url": "https://github.com/overlookerjs/overlooker-tti-polyfill.git"
   },
-  "homepage": "https://github.com/overlookerjs/tti-polyfill#readme",
+  "homepage": "https://github.com/overlookerjs/overlooker-tti-polyfill#readme",
   "devDependencies": {
     "chalk": "^1.1.3",
     "eslint": "^4.0.0",
